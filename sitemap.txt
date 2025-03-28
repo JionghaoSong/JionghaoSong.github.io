@@ -1,8 +1,10 @@
+https://jionghaosong.github.io/comments/index.html
+https://jionghaosong.github.io/movies/index.html
+https://jionghaosong.github.io/categories/index.html
+https://jionghaosong.github.io/about/index.html
 https://jionghaosong.github.io/link/index.html
 https://jionghaosong.github.io/music/index.html
-https://jionghaosong.github.io/movies/index.html
 https://jionghaosong.github.io/photos/index.html
 https://jionghaosong.github.io/tags/index.html
-https://jionghaosong.github.io/categories/index.html
 https://jionghaosong.github.io/2025/03/23/hello-world/
 https://jionghaosong.github.io/
