@@ -1,0 +1,108 @@
+/* File: main.css */
+
+/* 侧边栏个人信息卡片：更白背景 */
+#aside-content > .card-widget.card-info {
+    background: rgba(255, 255, 255, 0.9) !important;  /* 几乎纯白，90% 不透明 */
+}
+
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+    background: rgba(180, 180, 180, 0.1) !important;  /* 暗色模式下轻微亮灰，避免刺眼 */
+}
+
+/* 侧边栏公告栏卡片：更白背景 */
+#aside-content > .card-widget.card-announcement {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-theme="dark"] #aside-content > .card-widget.card-announcement {
+    background: rgba(180, 180, 180, 0.1) !important;
+}
+
+/* 侧边栏目录 / 最新文章等卡片：更白背景 */
+#aside-content > .sticky_layout > .card-widget {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-theme="dark"] #aside-content > .sticky_layout > .card-widget {
+    background: rgba(180, 180, 180, 0.1) !important;
+}
+
+
+
+#recent-posts > .recent-post-item {
+    height: 13.5em !important;
+    overflow: hidden;          /* 超出裁剪 */
+    position: relative;        /* 确保子元素可受控 */
+    display: block !important; /* 避免 flex/grid 撑高 */
+}
+
+#recent-posts > .recent-post-item .content {
+    max-height: 100% !important;
+    overflow: hidden;
+}
+
+#recent-posts > .recent-post-item .summary {
+    max-height: 100% !important;
+    overflow: hidden;
+}
+
+
+/* 个人信息Follow me按钮 */
+#aside-content>.card-widget.card-info>#card-info-btn {
+    background-color: #3eb8be;
+    border-radius: 8px;
+}
+
+/*分类页面*/
+.layout>#page {
+    background: linear-gradient(-45deg, rgba(225,235,255,.8), 
+rgba(225,235,255,.9), 
+rgba(225,235,255,.9), 
+rgba(225,235,255,.8));
+}
+[data-theme=dark] .layout>#page {
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
+}
+ 
+/* 时间轴页面 */
+.layout>#archive {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme=dark] .layout>#archive {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+
+
+/*文章页面*/
+/* .layout>#post {
+    background: linear-gradient(-45deg, rgba(225, 255, 252, 0.8), 
+rgba(255, 225, 229, 0.9), 
+rgba(225, 255, 225, 0.9), 
+rgba(253, 255, 225, 0.8));
+}
+[data-theme=dark] .layout>#post {
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
+} */
+
+
+/*主页文章预览页面*/
+/* #recent-posts>.recent-post-item{
+    background: linear-gradient(-45deg, rgba(225, 255, 252, 0.8), 
+    rgba(255, 225, 229, 0.9), 
+    rgba(225, 255, 225, 0.9), 
+    rgba(253, 255, 225, 0.8));
+}
+[data-theme=dark] #recent-posts>.recent-post-item{
+    background: linear-gradient(-45deg, rgba(24,40,72,.2), 
+rgba(35,37,58,.9), 
+rgba(35,37,58,.9), 
+rgba(24,40,72,.2));
+} */
