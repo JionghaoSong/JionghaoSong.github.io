@@ -1,0 +1,607 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>七月记｜基于数据分析的我站全流程诊断报告 | 唐宋名家</title><meta name="author" content="HarrySong"><meta name="copyright" content="HarrySong"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文以我站为分析对象，从站点区位市场、月度经营数据、竞品分流、会员与对公客户维度完成全流程经营诊断。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="七月记｜基于数据分析的我站全流程诊断报告">
+<meta property="og:url" content="https://harrysong.online/2026/07/31/CNPC/serf_16/index.html">
+<meta property="og:site_name" content="唐宋名家">
+<meta property="og:description" content="本文以我站为分析对象，从站点区位市场、月度经营数据、竞品分流、会员与对公客户维度完成全流程经营诊断。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://harrysong.online/image/avatar.jpg">
+<meta property="article:published_time" content="2026-07-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-08-05T11:10:09.996Z">
+<meta property="article:author" content="HarrySong">
+<meta property="article:tag" content="职场新人">
+<meta property="article:tag" content="成长日记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://harrysong.online/image/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "七月记｜基于数据分析的我站全流程诊断报告",
+  "url": "https://harrysong.online/2026/07/31/CNPC/serf_16/",
+  "image": "https://harrysong.online/image/avatar.jpg",
+  "datePublished": "2026-07-30T16:00:00.000Z",
+  "dateModified": "2026-08-05T11:10:09.996Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "HarrySong",
+      "url": "https://harrysong.online/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/image/favicon.jpg"><link rel="canonical" href="https://harrysong.online/2026/07/31/CNPC/serf_16/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-NSEYEGN2Q9"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-NSEYEGN2Q9')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-NSEYEGN2Q9', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: HarrySong","link":"链接: ","source":"来源: 唐宋名家","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '七月记｜基于数据分析的我站全流程诊断报告',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><script async src="./js/busuanzi.pure.mini.js"></script><link rel="stylesheet" href="/styles/twikoo.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="唐宋名家" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (true) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/image/milan2.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/image/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa-solid fa-rss"></i><span> RSS</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/image/avatar.jpg" alt="Logo"><span class="site-name">唐宋名家</span></a><a class="nav-page-title" href="/"><span class="site-name">七月记｜基于数据分析的我站全流程诊断报告</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa-solid fa-rss"></i><span> RSS</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">七月记｜基于数据分析的我站全流程诊断报告</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-30T16:00:00.000Z" title="发表于 2026-07-31 00:00:00">2026-07-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-08-05T11:10:09.996Z" title="更新于 2026-08-05 19:10:09">2026-08-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CNPC/">CNPC</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">3.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
+<li>站级和区域基本情况</li>
+<li>经营数据分析和优化建议</li>
+<li>南方站点转型经验梳理</li>
+</ol>
+<h2 id="一、站级和区域基本情况"><a href="#一、站级和区域基本情况" class="headerlink" title="一、站级和区域基本情况"></a>一、站级和区域基本情况</h2><h3 id="1-1-地理位置＆基本情况"><a href="#1-1-地理位置＆基本情况" class="headerlink" title="1.1 地理位置＆基本情况"></a>1.1 地理位置＆基本情况</h3><p>站点坐落于城市城西主干道南侧，毗邻城市主干道与环线；周边大型居民区、企事业单位高度集中；紧邻大型综合商圈，沿线多座写字楼、公寓；站点为纯汽油经营站点，未配套充电桩、洗车服务。</p>
+<h3 id="1-2-区域市场整体情况"><a href="#1-2-区域市场整体情况" class="headerlink" title="1.2 区域市场整体情况"></a>1.2 区域市场整体情况</h3><p>城西片区共有加油站35座，其中本品牌3座，竞品品牌9座，民营社会站点23座。对比2025年数据，竞品品牌站点新增1座，民营站点减少3座。</p>
+<p>基于地图大数据测算，本品牌汽油零售市场占有率约6.32%，头部竞品品牌占比23.39%，民营加油站合计占比70.29%，区域市场被民营、竞品品牌占据绝大多数份额，本品牌竞争劣势明显。</p>
+<h3 id="1-3-周内经营指标月度统计（统计周期：2026-6-15-2026-7-15）"><a href="#1-3-周内经营指标月度统计（统计周期：2026-6-15-2026-7-15）" class="headerlink" title="1.3 周内经营指标月度统计（统计周期：2026.6.15-2026.7.15）"></a>1.3 周内经营指标月度统计（统计周期：2026.6.15-2026.7.15）</h3><h4 id="工作日与周末整体消费差异"><a href="#工作日与周末整体消费差异" class="headerlink" title="工作日与周末整体消费差异"></a>工作日与周末整体消费差异</h4><p>月度营收中，工作日贡献77.9%，周末仅占22.1%；</p>
+<ul>
+<li>交易笔数：工作日日均392笔，周末445笔，周末到店车流、散户客流更多；</li>
+<li>客单价：工作日291元，周末208元，工作日单笔消费金额高出83元。</li>
+</ul>
+<p>客群结构区分：<br>工作日核心客群为企事业单位公车、通勤营运车辆、长期对公固定客户，消费习惯为大额加满，是门店稳定营收基本盘；<br>周末以周边居民私家车散户为主，多为短途出行小额补油，客流总量高，但单客收益贡献偏低。</p>
+<h4 id="一周逐日细分经营特征"><a href="#一周逐日细分经营特征" class="headerlink" title="一周逐日细分经营特征"></a>一周逐日细分经营特征</h4><ol>
+<li>周四：全周车流峰值，受油价上调预期影响，大量车主提前到站加油，交易笔数全周最高；</li>
+<li>周二：全周客单价峰值，周一、周二对公单位车辆集中到站，客群消费质量高，但进站总客流规模偏低；</li>
+<li>周六：会员优惠活动引流效果突出，进站客流充足，但到场客群多为小额加油散户，客单价跌至全周最低，呈现“流量充足、单客价值不足”问题，需重点做好新客留存转化。</li>
+</ol>
+<h3 id="1-4-周边客群资源摸底"><a href="#1-4-周边客群资源摸底" class="headerlink" title="1.4 周边客群资源摸底"></a>1.4 周边客群资源摸底</h3><p>以站点为中心直线1公里范围，覆盖20个居民小区、6所院校（3所幼儿园、1所中学、2所高校）、2家医院、2处文旅场馆、40余家机关单位及各类企业，民生消费、公务通勤客群基础充足。</p>
+<h2 id="二、经营数据分析和优化建议"><a href="#二、经营数据分析和优化建议" class="headerlink" title="二、经营数据分析和优化建议"></a>二、经营数据分析和优化建议</h2><h3 id="2-1-支付渠道结构分析（2026-6-15-7-15）"><a href="#2-1-支付渠道结构分析（2026-6-15-7-15）" class="headerlink" title="2.1 支付渠道结构分析（2026.6.15-7.15）"></a>2.1 支付渠道结构分析（2026.6.15-7.15）</h3><p>周期内全站总支付金额253.52万元，渠道结构分层清晰：</p>
+<ol>
+<li>核心主力渠道（合计占比74.2%）：线上会员卡27.9%、实体加油卡24.5%、微信支付宝移动支付21.8%，是门店营收核心支撑；</li>
+<li>营销增量渠道：银行信用卡合作活动9.8%、平台现金券6.1%，为门店带来稳定新增客流；</li>
+<li>补充渠道：现金、商超福利卡等其他支付方式合计9.8%，满足多元消费需求。</li>
+</ol>
+<p>渠道现存问题：信用卡、现金券营销活动虽带来客流增长，但大量客户仅因优惠到站，活动结束后复购意愿弱，存在“只引流、不留客”现象。</p>
+<h4 id="配套优化方向"><a href="#配套优化方向" class="headerlink" title="配套优化方向"></a>配套优化方向</h4><ol>
+<li>深耕用券客群运营：针对使用优惠券到店客户做分层维护，通过会员消息推送、消费提醒提升复购，逐步降低门店对低价优惠的依赖，将营销成本转化为长期稳定销量；</li>
+<li>统筹全支付渠道服务：保留全部小额支付渠道，适配不同客群消费习惯，主力支付渠道优化结算效率，全面提升客户到店体验；</li>
+<li>依托社区公益场景锁客：开展社区落地、企业联动宣传活动，提升门店本地口碑，引导优惠散户、流动车主开通线上会员卡，转化为固定客户，对冲营销成本。</li>
+</ol>
+<h3 id="2-2-周边竞争对手整体研判"><a href="#2-2-周边竞争对手整体研判" class="headerlink" title="2.2 周边竞争对手整体研判"></a>2.2 周边竞争对手整体研判</h3><h4 id="竞品布局"><a href="#竞品布局" class="headerlink" title="竞品布局"></a>竞品布局</h4><p>以站点为中心，驾车5分钟辐射圈内共8座加油站，包含1座同品牌站点、1座头部竞品品牌站点、6家民营加油站，站点被竞品全方位包围，属于夹心竞争点位。</p>
+<h4 id="竞品通用经营策略"><a href="#竞品通用经营策略" class="headerlink" title="竞品通用经营策略"></a>竞品通用经营策略</h4><ol>
+<li>民营站点：普遍采用汽油大幅直降优惠，储值叠加优惠后最高降幅可观，同步配套免费洗车服务，到店赠送饮用水、纸巾等礼品；线上短视频平台常态化上架团购加油券，低价引流；</li>
+<li>头部竞品品牌站点：主推储值会员卡，加油赠送洗车、洗护日用品；会员日固定油价优惠；</li>
+<li>同城同品牌其他站点：会员日油价直降，满额赠送洗车权益；</li>
+<li>本站核心短板：无洗车配套硬件，缺少竞品高频引流服务，同等优惠力度下客户吸引力不足。</li>
+</ol>
+<h4 id="客户流失去向数据统计"><a href="#客户流失去向数据统计" class="headerlink" title="客户流失去向数据统计"></a>客户流失去向数据统计</h4><ol>
+<li>流失品牌分布：52.46%客户流失至民营加油站，28.97%流向头部竞品品牌，13.99%流失至同城同品牌其他站点，剩余少量流向外资品牌站点；</li>
+<li>主要流失站点：多家周边民营站、竞品品牌站点为客户外流核心去向；</li>
+<li>流失核心诱因：竞品持续低价让利+免费洗车组合权益，本站缺少配套硬件，流动客户留存能力弱。</li>
+</ol>
+<h3 id="2-3-个人会员客户数据诊断"><a href="#2-3-个人会员客户数据诊断" class="headerlink" title="2.3 个人会员客户数据诊断"></a>2.3 个人会员客户数据诊断</h3><p>对比2026年1-3月、4-6月两个周期会员消费数据：</p>
+<ol>
+<li>全站总消费客户由4700人缩减至4141人，整体客流收缩约12%；</li>
+<li>仅单次到店消费的流动客户占比持续超过55%，过路散户复购意愿极低；</li>
+<li>高复购客户（月度消费5次及以上）占比稳定在11%左右，存量忠实客户粘性较强，但新增转化规模不足。</li>
+</ol>
+<h4 id="客户激活优化方案"><a href="#客户激活优化方案" class="headerlink" title="客户激活优化方案"></a>客户激活优化方案</h4><ol>
+<li>客户分层筛选：依托门店系统提取三类沉睡客户名单<ul>
+<li>近90天新开卡、使用优惠券后30天无消费客户；</li>
+<li>添加企业微信、连续90天未到店客户；</li>
+<li>按30&#x2F;60&#x2F;90天周期划分全量流失车主；</li>
+</ul>
+</li>
+<li>定向精准触达：统一短信推送专属加油折扣券，客户核销优惠券后，系统自动发放等额复购券，形成持续回流闭环；</li>
+<li>会员日活动优化：针对周六客流大、客单价低的痛点，通过油品差价活动，引导客户加注高标号油品、加满油箱，同步提升单笔销量与客单价。</li>
+</ol>
+<h3 id="2-4-对公单位客户经营分析"><a href="#2-4-对公单位客户经营分析" class="headerlink" title="2.4 对公单位客户经营分析"></a>2.4 对公单位客户经营分析</h3><p>参考2025年上下半年油量对比数据，对公定点客户整体加油量持续下滑，主要成因分为四类：</p>
+<ol>
+<li>业务合作划转：部分机关、企业公车定点业务整体转移至竞品站点，或同时在双品牌站点加油，本站对公增量被持续稀释；</li>
+<li>结算模式变更：多家合作单位取消固定月度加油卡，改为临时零散加油，稳定批量销量大幅减少；</li>
+<li>市场需求收缩：存量合作单位整体业务缩减，公车出行频次下降，用油需求同步走低；</li>
+<li>新能源车辆替代：政企通勤、配送车辆批量更换电动车，传统汽油固定需求自然缩减。</li>
+</ol>
+<h4 id="对公客户拓展策略：“以客引客”五进活动"><a href="#对公客户拓展策略：“以客引客”五进活动" class="headerlink" title="对公客户拓展策略：“以客引客”五进活动"></a>对公客户拓展策略：“以客引客”五进活动</h4><ol>
+<li>进机关、进企业（核心攻坚）：对接单位行政、工会部门，拓展公车定点合作；同步面向单位职工推出专属会员福利，实现公车业务带动私家车增量；</li>
+<li>进社区：利用周末、节假日开展线下宣传，推广会员优惠，锁定周边居民日常用油需求；</li>
+<li>进商圈：面向通勤上班族、逛街流动客群推广便捷结算、便民服务，挖掘顺路客源；</li>
+<li>进学校、进医院：针对教职工、医护人员推出团体专属加油优惠，开发稳定通勤客群。</li>
+</ol>
+<h3 id="2-5-综合落地经营优化举措"><a href="#2-5-综合落地经营优化举措" class="headerlink" title="2.5 综合落地经营优化举措"></a>2.5 综合落地经营优化举措</h3><ol>
+<li><p><strong>现场增值服务弥补硬件短板</strong><br>无洗车设备前提下，把擦拭前挡风玻璃、清理车内垃圾等便民服务作为标准化服务流程长期落地，用精细化服务抵消竞品洗车优势，提升客户现场体验。</p>
+</li>
+<li><p><strong>会员社群精细化运营</strong><br>将门店客户社群从“搭建群聊”转向“活跃运营”，每周会员日、油价调价节点，提前推送油价提醒、专属优惠券、便利店换购活动；引导到店流动车主添加企业微信、加入社群，沉淀私域客户，提高复购频次。</p>
+</li>
+<li><p><strong>异业合作双向引流</strong></p>
+</li>
+</ol>
+<ul>
+<li>商圈、餐饮商户联动：和周边大型商场、沿街餐饮店双向合作，餐饮消费达标兑换加油券，加油赠送商超、餐饮代金券，门店与合作商家互相摆放宣传物料，双向导流；</li>
+<li>社区物业联动：借助小区业主微信群、公告栏宣传门店便民服务、会员日活动，深耕社区私家车客源；</li>
+<li>租车行业开发：站点3公里内存在大量租车网点，作为潜力增量客群专项开发。</li>
+</ul>
+<h2 id="三、南方站点转型经验梳理"><a href="#三、南方站点转型经验梳理" class="headerlink" title="三、南方站点转型经验梳理"></a>三、南方站点转型经验梳理</h2><h3 id="（一）“超充-综合商业”-模式（深圳、广州商圈综合加能站）"><a href="#（一）“超充-综合商业”-模式（深圳、广州商圈综合加能站）" class="headerlink" title="（一）“超充 + 综合商业” 模式（深圳、广州商圈综合加能站）"></a>（一）“超充 + 综合商业” 模式（深圳、广州商圈综合加能站）</h3><ul>
+<li><p>硬件布局思路<br>商圈客群以私家车、网约车为主，核心诉求是快进快出。站点配置全液冷超充设备，实现短时极速补能，打造 “一杯咖啡，满电出发” 场景。</p>
+</li>
+<li><p>商圈流量运营方式<br>充分利用车主 20–30 分钟充电停留空档，与周边商场、餐饮、影院开展权益互通。推行两类双向活动：充电赠送商圈消费券；商圈消费达标发放站点充电权益，构建客流双向导流闭环。</p>
+</li>
+<li><p>标杆案例佐证<br>中石油深圳笔架山光储超充示范站配备 720kW 全液冷超充，车辆 20% 充至 85% 仅需 10 分钟；广州多个商圈光储站点落地同类设备，常态化开展商圈联动活动，日均充电客流持续稳定增长。</p>
+</li>
+</ul>
+<h3 id="（二）“快餐-咖啡-迷你仓”-非油生态（浙江、上海城市核心加能站）"><a href="#（二）“快餐-咖啡-迷你仓”-非油生态（浙江、上海城市核心加能站）" class="headerlink" title="（二）“快餐 &#x2F; 咖啡 + 迷你仓” 非油生态（浙江、上海城市核心加能站）"></a>（二）“快餐 &#x2F; 咖啡 + 迷你仓” 非油生态（浙江、上海城市核心加能站）</h3><ul>
+<li><p>业态升级方向<br>增设独立沿街咖啡外带窗口、烘焙简餐，面向写字楼白领打造休憩消费场景；<br>条件充足站点可洽谈品牌快餐，建立汽车穿梭窗口。</p>
+</li>
+<li><p>便民配套拓展<br>利用站房边角空间，与顺丰、菜鸟合作布设自助快递柜、商圈微型寄递中转站；<br>依托加油站 24 小时经营优势，打造片区物流微枢纽。</p>
+</li>
+<li><p>案例佐证<br>中石化上海第一加油站、浙江石油城区商圈站点落地易捷咖啡（Tiki Easy）沿街门店，吸引通勤人群专程消费；上海、杭州多家加能站增设快递寄递网点，有效拉升非油品营收，客户平均停留时长显著提升。截至目前，全国易捷咖啡门店数量已突破 1800 家。</p>
+</li>
+</ul>
+<h3 id="（三）“虚拟电厂-分布式光储”-模式（江苏、广东智慧综合能源站）"><a href="#（三）“虚拟电厂-分布式光储”-模式（江苏、广东智慧综合能源站）" class="headerlink" title="（三）“虚拟电厂 + 分布式光储” 模式（江苏、广东智慧综合能源站）"></a>（三）“虚拟电厂 + 分布式光储” 模式（江苏、广东智慧综合能源站）</h3><ul>
+<li><p>光储充一体化应用<br>利用加油站罩棚铺设分布式光伏，配套储能电池；<br>夜间低谷电价储能，白天高峰时段供给充电桩，降低场站用电成本。</p>
+</li>
+<li><p>参与虚拟电厂（VPP）市场<br>将站点储能资源作为分布式可调负荷，接入区域电网；<br>通过峰谷电价套利、电网需求响应，获取电力辅助服务补贴，开辟油品、充电以外的全新收益渠道。</p>
+</li>
+<li><p>案例佐证<br>中国石化江苏石油率先取得虚拟电厂主体资质，依托全省加油站光伏、储能资源参与电力市场交易；广东大量综合加能站投建罩棚光伏储能系统，实现自发自用、余电并网。</p>
+</li>
+</ul>
+<br>
+汇报完毕，不妥之处请领导批评指正。</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://harrysong.online">HarrySong</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://harrysong.online/2026/07/31/CNPC/serf_16/">https://harrysong.online/2026/07/31/CNPC/serf_16/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://harrysong.online" target="_blank">唐宋名家</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA/">职场新人</a><a class="post-meta__tags" href="/tags/%E6%88%90%E9%95%BF%E6%97%A5%E8%AE%B0/">成长日记</a></div><div class="post-share"><div class="addtoany"><div class="a2a_kit a2a_kit_size_32 a2a_default_style"><a class="a2a_button_copy_link"></a><a class="a2a_button_twitter"></a><a class="a2a_button_wechat"></a><a class="a2a_button_sina_weibo"></a><a class="a2a_button_line"></a><a class="a2a_button_telegram"></a><a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a></div></div><script async="async" src="https://static.addtoany.com/menu/page.js"></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/06/30/CNPC/serf_15/" title="六月记｜基层攻坚、专业学习与青年成长感悟"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">六月记｜基层攻坚、专业学习与青年成长感悟</div></div><div class="info-2"><div class="info-item-1">记录本月基层营销攻坚、站点管理感悟、省外财会培训与青年朗诵活动的工作成长心得。</div></div></div></a><a class="pagination-related" href="/2026/08/31/CNPC/serf_17/" title="八月记｜基层入职一周年复盘：在一线读懂营销与成长"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">八月记｜基层入职一周年复盘：在一线读懂营销与成长</div></div><div class="info-2"><div class="info-item-1">基层岗位一年历练，将心理学理论落地现场营销，记录一线岗位的思考、实战与成长收获。</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/08/15/CNPC/serf_1/" title="培训序曲：始于只有红楼，我的新员工之旅（上）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-15</div><div class="info-item-2">培训序曲：始于只有红楼，我的新员工之旅（上）</div></div><div class="info-2"><div class="info-item-1">新员工培训第一阶段的心路历程，记录了在廊坊的培训生活以及一段萍水相逢的友谊，为即将到来的军训和第二轮培训拉开序幕。</div></div></div></a><a class="pagination-related" href="/2026/02/28/CNPC/serf_10/" title="二月记｜在烟火气中守望，在市场中破冰"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-28</div><div class="info-item-2">二月记｜在烟火气中守望，在市场中破冰</div></div><div class="info-2"><div class="info-item-1">本文围绕省市两级公司会议精神学习、基层岗位坚守、市场拓展攻坚、站点果蔬销售实践等方面展开，总结工作成果与思考，明确后续工作方向。</div></div></div></a><a class="pagination-related" href="/2026/04/30/CNPC/serf_13/" title="四月记｜理论武装与数智赋能的进阶之路"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-04-30</div><div class="info-item-2">四月记｜理论武装与数智赋能的进阶之路</div></div><div class="info-2"><div class="info-item-1">记录四月份的学习与思考：从理论研讨班的党性淬炼，到人工智能+RPA培训的业务赋能，在基层岗位探索技术提效的可能性。</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/image/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">HarrySong</div><div class="author-info-description">如果有一天，你发现我在平庸面前低了头，请向我开炮。 —凯鲁亚克《在路上》</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://xhslink.com/m/9EhoC0jBKKS"><i class="fa-solid fa-user-plus"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/JionghaoSong" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:harry.sjh@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.linkedin.com/in/jionghaosong/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color: #0077b5;"></i></a><a class="social-icon" href="https://www.instagram.com/harry.sjh" target="_blank" title="Instagram"><i class="fab fa-instagram" style="color: #e4405f;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">你好陌生人，承蒙遇见，三生有幸，祝你永远年轻，永远热泪盈眶，终身美丽</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%AB%99%E7%BA%A7%E5%92%8C%E5%8C%BA%E5%9F%9F%E5%9F%BA%E6%9C%AC%E6%83%85%E5%86%B5"><span class="toc-text">一、站级和区域基本情况</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE%EF%BC%86%E5%9F%BA%E6%9C%AC%E6%83%85%E5%86%B5"><span class="toc-text">1.1 地理位置＆基本情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%8C%BA%E5%9F%9F%E5%B8%82%E5%9C%BA%E6%95%B4%E4%BD%93%E6%83%85%E5%86%B5"><span class="toc-text">1.2 区域市场整体情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%91%A8%E5%86%85%E7%BB%8F%E8%90%A5%E6%8C%87%E6%A0%87%E6%9C%88%E5%BA%A6%E7%BB%9F%E8%AE%A1%EF%BC%88%E7%BB%9F%E8%AE%A1%E5%91%A8%E6%9C%9F%EF%BC%9A2026-6-15-2026-7-15%EF%BC%89"><span class="toc-text">1.3 周内经营指标月度统计（统计周期：2026.6.15-2026.7.15）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E6%97%A5%E4%B8%8E%E5%91%A8%E6%9C%AB%E6%95%B4%E4%BD%93%E6%B6%88%E8%B4%B9%E5%B7%AE%E5%BC%82"><span class="toc-text">工作日与周末整体消费差异</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E5%91%A8%E9%80%90%E6%97%A5%E7%BB%86%E5%88%86%E7%BB%8F%E8%90%A5%E7%89%B9%E5%BE%81"><span class="toc-text">一周逐日细分经营特征</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%91%A8%E8%BE%B9%E5%AE%A2%E7%BE%A4%E8%B5%84%E6%BA%90%E6%91%B8%E5%BA%95"><span class="toc-text">1.4 周边客群资源摸底</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%BB%8F%E8%90%A5%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%92%8C%E4%BC%98%E5%8C%96%E5%BB%BA%E8%AE%AE"><span class="toc-text">二、经营数据分析和优化建议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%94%AF%E4%BB%98%E6%B8%A0%E9%81%93%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%EF%BC%882026-6-15-7-15%EF%BC%89"><span class="toc-text">2.1 支付渠道结构分析（2026.6.15-7.15）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E5%A5%97%E4%BC%98%E5%8C%96%E6%96%B9%E5%90%91"><span class="toc-text">配套优化方向</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%91%A8%E8%BE%B9%E7%AB%9E%E4%BA%89%E5%AF%B9%E6%89%8B%E6%95%B4%E4%BD%93%E7%A0%94%E5%88%A4"><span class="toc-text">2.2 周边竞争对手整体研判</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%9E%E5%93%81%E5%B8%83%E5%B1%80"><span class="toc-text">竞品布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%9E%E5%93%81%E9%80%9A%E7%94%A8%E7%BB%8F%E8%90%A5%E7%AD%96%E7%95%A5"><span class="toc-text">竞品通用经营策略</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E6%B5%81%E5%A4%B1%E5%8E%BB%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1"><span class="toc-text">客户流失去向数据统计</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E4%B8%AA%E4%BA%BA%E4%BC%9A%E5%91%98%E5%AE%A2%E6%88%B7%E6%95%B0%E6%8D%AE%E8%AF%8A%E6%96%AD"><span class="toc-text">2.3 个人会员客户数据诊断</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E6%BF%80%E6%B4%BB%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88"><span class="toc-text">客户激活优化方案</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%AF%B9%E5%85%AC%E5%8D%95%E4%BD%8D%E5%AE%A2%E6%88%B7%E7%BB%8F%E8%90%A5%E5%88%86%E6%9E%90"><span class="toc-text">2.4 对公单位客户经营分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%85%AC%E5%AE%A2%E6%88%B7%E6%8B%93%E5%B1%95%E7%AD%96%E7%95%A5%EF%BC%9A%E2%80%9C%E4%BB%A5%E5%AE%A2%E5%BC%95%E5%AE%A2%E2%80%9D%E4%BA%94%E8%BF%9B%E6%B4%BB%E5%8A%A8"><span class="toc-text">对公客户拓展策略：“以客引客”五进活动</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E7%BB%BC%E5%90%88%E8%90%BD%E5%9C%B0%E7%BB%8F%E8%90%A5%E4%BC%98%E5%8C%96%E4%B8%BE%E6%8E%AA"><span class="toc-text">2.5 综合落地经营优化举措</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%8D%97%E6%96%B9%E7%AB%99%E7%82%B9%E8%BD%AC%E5%9E%8B%E7%BB%8F%E9%AA%8C%E6%A2%B3%E7%90%86"><span class="toc-text">三、南方站点转型经验梳理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%9C%E8%B6%85%E5%85%85-%E7%BB%BC%E5%90%88%E5%95%86%E4%B8%9A%E2%80%9D-%E6%A8%A1%E5%BC%8F%EF%BC%88%E6%B7%B1%E5%9C%B3%E3%80%81%E5%B9%BF%E5%B7%9E%E5%95%86%E5%9C%88%E7%BB%BC%E5%90%88%E5%8A%A0%E8%83%BD%E7%AB%99%EF%BC%89"><span class="toc-text">（一）“超充 + 综合商业” 模式（深圳、广州商圈综合加能站）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%9C%E5%BF%AB%E9%A4%90-%E5%92%96%E5%95%A1-%E8%BF%B7%E4%BD%A0%E4%BB%93%E2%80%9D-%E9%9D%9E%E6%B2%B9%E7%94%9F%E6%80%81%EF%BC%88%E6%B5%99%E6%B1%9F%E3%80%81%E4%B8%8A%E6%B5%B7%E5%9F%8E%E5%B8%82%E6%A0%B8%E5%BF%83%E5%8A%A0%E8%83%BD%E7%AB%99%EF%BC%89"><span class="toc-text">（二）“快餐 &#x2F; 咖啡 + 迷你仓” 非油生态（浙江、上海城市核心加能站）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%9C%E8%99%9A%E6%8B%9F%E7%94%B5%E5%8E%82-%E5%88%86%E5%B8%83%E5%BC%8F%E5%85%89%E5%82%A8%E2%80%9D-%E6%A8%A1%E5%BC%8F%EF%BC%88%E6%B1%9F%E8%8B%8F%E3%80%81%E5%B9%BF%E4%B8%9C%E6%99%BA%E6%85%A7%E7%BB%BC%E5%90%88%E8%83%BD%E6%BA%90%E7%AB%99%EF%BC%89"><span class="toc-text">（三）“虚拟电厂 + 分布式光储” 模式（江苏、广东智慧综合能源站）</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/31/CNPC/serf_3/" title="八月记｜从校园到职场">八月记｜从校园到职场</a><time datetime="2026-09-08T05:33:18.844Z" title="更新于 2026-09-08 13:33:18">2026-09-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/08/31/CNPC/serf_17/" title="八月记｜基层入职一周年复盘：在一线读懂营销与成长">八月记｜基层入职一周年复盘：在一线读懂营销与成长</a><time datetime="2026-09-08T05:30:34.333Z" title="更新于 2026-09-08 13:30:34">2026-09-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/31/Tech/%E6%8A%80%E6%9C%AF%E6%A0%88/" title="博客技术手册">博客技术手册</a><time datetime="2026-08-05T11:14:52.562Z" title="更新于 2026-08-05 19:14:52">2026-08-05</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2025 - 2026 By HarrySong</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css')
+    if (true) {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'forest'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const applyThemeDefaultsConfig = theme => {
+    if (theme === 'dark-mode') {
+      Chart.defaults.color = "rgba(255, 255, 255, 0.8)"
+      Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    } else {
+      Chart.defaults.color = "rgba(0, 0, 0, 0.8)"
+      Chart.defaults.borderColor = "rgba(0, 0, 0, 0.1)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    }
+  }
+
+  // Recursively traverse the config object and automatically apply theme-specific color schemes
+  const applyThemeConfig = (obj, theme) => {
+    if (typeof obj !== 'object' || obj === null) return
+
+    Object.keys(obj).forEach(key => {
+      const value = obj[key]
+      // If the property is an object and has theme-specific options, apply them
+      if (typeof value === 'object' && value !== null) {
+        if (value[theme]) {
+          obj[key] = value[theme] // Apply the value for the current theme
+        } else {
+          // Recursively process child objects
+          applyThemeConfig(value, theme)
+        }
+      }
+    })
+  }
+
+  const runChartJS = ele => {
+    window.loadChartJS = true
+
+    Array.from(ele).forEach((item, index) => {
+      const chartSrc = item.firstElementChild
+      const chartID = item.getAttribute('data-chartjs-id') || ('chartjs-' + index) // Use custom ID or default ID
+      const width = item.getAttribute('data-width')
+      const existingCanvas = document.getElementById(chartID)
+
+      // If a canvas already exists, remove it to avoid rendering duplicates
+      if (existingCanvas) {
+          existingCanvas.parentNode.remove()
+      }
+
+      const chartDefinition = chartSrc.textContent
+      const canvas = document.createElement('canvas')
+      canvas.id = chartID
+
+      const div = document.createElement('div')
+      div.className = 'chartjs-wrap'
+
+      if (width) {
+        div.style.width = width
+      }
+
+      div.appendChild(canvas)
+      chartSrc.insertAdjacentElement('afterend', div)
+
+      const ctx = document.getElementById(chartID).getContext('2d')
+
+      const config = JSON.parse(chartDefinition)
+
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark-mode' : 'light-mode'
+
+      // Set default styles (initial setup)
+      applyThemeDefaultsConfig(theme)
+
+      // Automatically traverse the config and apply dual-mode color schemes
+      applyThemeConfig(config, theme)
+
+      new Chart(ctx, config)
+    })
+  }
+
+  const loadChartJS = () => {
+    const chartJSEle = document.querySelectorAll('#article-container .chartjs-container')
+    if (chartJSEle.length === 0) return
+
+    window.loadChartJS ? runChartJS(chartJSEle) : btf.getScript('https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js').then(() => runChartJS(chartJSEle))
+  }
+
+  // Listen for theme change events
+  btf.addGlobalFn('themeChange', loadChartJS, 'chartjs')
+  btf.addGlobalFn('encrypt', loadChartJS, 'chartjs')
+
+  window.pjax ? loadChartJS() : document.addEventListener('DOMContentLoaded', loadChartJS)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-harrysong.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = (el = document, path = location.pathname) => {
+    twikoo.init({
+      el: el.querySelector('#twikoo-wrap'),
+      envId: 'https://twikoo-harrysong.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      },
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    GLOBAL_CONFIG_SITE.pageType === 'post' && getCount()
+
+    isShuoshuo && (window.shuoshuoComment.destroyTwikoo = () => {
+      if (el.children.length) {
+        el.innerHTML = ''
+        el.classList.add('no-comment')
+      }
+    })
+  }
+
+  const loadTwikoo = (el, path) => {
+    if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
+    else btf.getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(() => init(el, path))
+  }
+
+  if (isShuoshuo) {
+    'Twikoo' === 'Twikoo'
+      ? window.shuoshuoComment = { loadComment: loadTwikoo }
+      : window.loadOtherComment = loadTwikoo
+    return
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><link rel="stylesheet" href="/styles/main.css"><script src="./js/jquery.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="这么近,那么美,周末来河北" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false 
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v3.8.2" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://app.netlify.com/" style="margin-inline:5px" data-title="本站采用双线部署，默认线路托管于Netlify" title=""><img src="https://img.shields.io/badge/Hosted-Netlify-brightgreen?style=flat&amp;logo=Netlify" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/./js/runtime.js"></script><!-- hexo injector body_end end --></body></html>
